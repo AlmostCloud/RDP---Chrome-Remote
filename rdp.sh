@@ -1,4 +1,7 @@
 #!/bin/bash
+
+clear
+
 sudo apt update && sudo apt upgrade -y
 apt install wget sudo nano git curl -y
 clear
