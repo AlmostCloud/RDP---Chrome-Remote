@@ -16,3 +16,18 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 clear
+
+echo "Cài đặt desktop!"
+sudo apt install lxde -y
+echo "Cài đặt thành công!"
+
+clear
+
+sudo adduser almostcloud
+sudo usermod -aG sudo almostcloud
+su almostcloud
+
+echo "Cài đặt remote"
+sudo wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo apt install ./chrome-remote-desktop_current_amd64.deb -y
+echo "Cài đặt thành công"
