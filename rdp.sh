@@ -23,10 +23,6 @@ echo "Cài đặt thành công!"
 
 clear
 
-sudo adduser almostcloud
-sudo usermod -aG sudo almostcloud
-su almostcloud
-
 echo "Cài đặt remote"
 sudo wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo apt install ./chrome-remote-desktop_current_amd64.deb -y
@@ -34,13 +30,10 @@ echo "Cài đặt thành công"
 
 clear
 
-echo "Nhập mã vào dưới đây"
-read -r TOKEN
-echo "Đang cập nhật bằng code được cung cấp..."
-sed -i '$TOKEN' main.sh
-echo "Cập nhật thành công"
+sudo adduser almostcloud
+sudo usermod -aG sudo almostcloud
+su almostcloud
 
 clear
 
-echo "đang bắt đầu khởi động"
-bash main.sh
+echo "Nhập mã của bạn"
