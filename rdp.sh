@@ -37,4 +37,10 @@ clear
 echo "Nhập mã vào dưới đây"
 read -r TOKEN
 echo "Đang cập nhật bằng code được cung cấp..."
-sed -i "s/TOKEN = ''/TOKEN = '$TOKEN'/" main.sh
+sed -i '$TOKEN' main.sh
+echo "Cập nhật thành công"
+
+clear
+
+echo "đang bắt đầu khởi động"
+bash main.sh
