@@ -35,5 +35,6 @@ echo "Cài đặt thành công"
 clear
 
 echo "Nhập mã vào dưới đây"
-read -r code
+read -r TOKEN
 echo "Đang cập nhật bằng code được cung cấp..."
+sed -i "s/TOKEN = ''/TOKEN = '$TOKEN'/" main.sh
