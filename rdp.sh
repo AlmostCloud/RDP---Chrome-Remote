@@ -31,3 +31,9 @@ echo "Cài đặt remote"
 sudo wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo apt install ./chrome-remote-desktop_current_amd64.deb -y
 echo "Cài đặt thành công"
+
+clear
+
+echo "Nhập mã vào dưới đây"
+read -r code
+echo "Đang cập nhật bằng code được cung cấp..."
