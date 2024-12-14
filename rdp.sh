@@ -32,8 +32,7 @@ clear
 
 sudo adduser almostcloud
 sudo usermod -aG sudo almostcloud
-su almostcloud
 
 clear
 
-echo "Nhập mã của bạn"
+su almostcloud && echo "Nhập mã của bạn"
